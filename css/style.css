@@ -3,6 +3,119 @@
   padding: 0;
   box-sizing: border-box; }
 
+.container {
+  padding-inline: 16px; }
+
+.hover-1, .hover-2 {
+  transition: 0.25s ease; }
+
+.hover-1:is(:hover, :focus-visible) {
+  color: #92a8c8;
+  transform: translateX(3px); }
+
+.hover-2:is(:hover, :focus-visible) {
+  color: #0ea6ec; }
+
+.profile-card, .profile-banner {
+  border-radius: 50%; }
+
+.header .btn {
+  display: none; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 24px;
+  background-color: #0f1729;
+  z-index: 4; }
+
+.header.active {
+  padding-block: 8px;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
+  border-block-end: 1px solid #223044;
+  animation: slideIn 0.5S ease forwards; }
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%); }
+  100% {
+    transform: translateY(0); } }
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.nav-open-btn, .nav-close-btn {
+  color: #92a8c8;
+  font-size: 3.5rem; }
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: -340px;
+  max-width: 340px;
+  width: 100%;
+  height: 100vh;
+  background-color: #0f1729;
+  padding: 30px;
+  z-index: 2;
+  overflow-y: auto;
+  visibility: hidden;
+  transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28); }
+
+.navbar.active {
+  transform: translateX(-340px);
+  visibility: visible;
+  transition: 0.5s cubic-bezier(0.05, 0.83, 0.52, 0.97); }
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-end: 15px;
+  margin-block-end: 15px;
+  border-block-end: 1px solid #223044; }
+
+.navbar-list {
+  border-block-end: 1px solid rgba(255, 255, 255, 0.15); }
+
+.navbar-link {
+  color: #e6f0ff;
+  font-weight: 500;
+  padding-block: 10px; }
+
+.navbar-bottom {
+  padding-block: 30px 20px;
+  margin-block: 20px 25px;
+  border-block: 1px solid #223044; }
+
+.navbar .profile-card {
+  margin-block-end: 15px; }
+
+.navbar .profile-card .card-title {
+  color: #bae1f2;
+  font-size: 1.4rem;
+  font-weight: 600; }
+
+.navbar .profile-card .card-subtitle {
+  font-size: 1.2rem; }
+
+.navbar .link-list {
+  columns: 2;
+  -webkit-columns: 2; }
+
+.navbar-bottom-link {
+  color: #e6f0ff;
+  font-size: 1.4rem;
+  padding-block: 6px; }
+
+.copyright-text {
+  color: #e6f0ff;
+  font-size: 1.3rem; }
+
 li {
   list-style: none; }
 

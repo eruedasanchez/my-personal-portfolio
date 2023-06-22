@@ -1,0 +1,112 @@
+.header .btn{
+    display: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 24px;
+    background-color: $bg-oxford-blue-2;
+    z-index: 4;
+}
+
+.header.active{
+    padding-block: 8px;
+    box-shadow: $shadow-1;
+    border-block-end: 1px solid $bg-prussian-blue;
+    animation: slideIn 0.5S ease forwards;
+}
+
+@keyframes slideIn{
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(0);}
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-open-btn, .nav-close-btn{
+    color: $text-wild-blue-yonder;
+    font-size: 3.5rem;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    right: -340px;
+    max-width: 340px;
+    width: 100%;
+    height: 100vh;
+    background-color: $bg-oxford-blue-2;
+    padding: 30px;
+    z-index: 2;
+    overflow-y: auto;
+    visibility: hidden;
+    transition: 0.25s $cubic-in;
+}
+
+.navbar.active{
+    transform: translateX(-340px);
+    visibility: visible;
+    transition: 0.5s $cubic-out;
+}
+
+.navbar-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block-end: 15px;
+    margin-block-end: 15px;
+    border-block-end: 1px solid $border-prussian-blue;
+}
+
+.navbar-list{
+    border-block-end: 1px solid $border-white-alpha-15;
+}
+
+.navbar-link{
+    color: $text-alice-blue;
+    font-weight: $weight-medium;
+    padding-block: 10px;
+}
+
+.navbar-bottom{
+    padding-block: 30px 20px;
+    margin-block: 20px 25px;
+    border-block: 1px solid $border-prussian-blue;
+}
+
+.navbar .profile-card{
+    margin-block-end: 15px;
+}
+
+.navbar .profile-card .card-title{
+    color: $text-columbia-blue;
+    font-size: $fontSize-6;
+    font-weight: $weight-semiBold;
+}
+
+.navbar .profile-card .card-subtitle{
+    font-size: $fontSize-7;
+}
+
+.navbar .link-list{
+    columns: 2;
+    -webkit-columns: 2;
+}
+
+.navbar-bottom-link{
+    color: $text-alice-blue;
+    font-size: $fontSize-6;
+    padding-block: 6px;
+}
+
+.copyright-text{
+    color: $text-alice-blue;
+    font-size: $fontSize-8;
+}

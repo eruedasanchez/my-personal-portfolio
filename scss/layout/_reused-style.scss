@@ -1,0 +1,21 @@
+.container{
+    padding-inline: 16px;
+}
+
+.hover-1, .hover-2{
+    transition: $transition-1;
+}
+
+.hover-1:is(:hover, :focus-visible){
+    color: $text-wild-blue-yonder;
+    transform: translateX(3px);
+}
+
+.hover-2:is(:hover, :focus-visible){
+    color: $text-carolina-blue;
+}
+
+.profile-card, .profile-banner{
+    border-radius: $radius-circle;
+
+}
