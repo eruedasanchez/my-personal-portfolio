@@ -1,0 +1,69 @@
+li{
+    list-style: none;
+}
+
+a,img,span,input,button,ion-icon{
+    display: block;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    height: auto;
+}
+
+input, button{
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+}
+
+input{
+    width: 100%;
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+ion-icon{
+    pointer-events: none;
+}
+
+address{
+    font-style: normal;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $bg-oxford-blue-2;
+    color: $text-shadow-blue;
+    font-family: $fontFamily-noto_sans;
+    font-size: 1.6rem;
+    line-height: $lineHeight-4;
+    overflow-y: overlay;
+    height: 300vh;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $bg-carolina-blue;
+    border-radius: $radius-pill;
+}
