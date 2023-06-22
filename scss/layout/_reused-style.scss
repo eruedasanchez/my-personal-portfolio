@@ -84,3 +84,22 @@
 .w-100{
     width: 100%;
 }
+
+.card{
+    background-color: $bg-oxford-blue;
+    border: 1px solid $border-prussian-blue;
+}
+
+.img-holder{
+    aspect-ratio: var(--width) / var(--height);
+    background-color: $bg-prussian-blue;
+    overflow: hidden;
+}
+
+.img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
