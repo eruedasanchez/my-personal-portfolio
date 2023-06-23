@@ -2,6 +2,12 @@
     display: none;
 }
 
+.feature-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .feature-card{
     padding: 20px;
     border-radius: $radius-16;

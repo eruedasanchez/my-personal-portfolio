@@ -2,6 +2,7 @@
 @import "./utilities/mixins";
 @import "./base/reset";
 @import "./base/typo";
+@import "./layout/main-index";
 @import "./layout/reused-style";
 @import "./layout/header";
 @import "./layout/hero";
@@ -9,4 +10,3 @@
 @import "./layout/featured-posts";
 @import "./layout/popular-tags";
 @import "./layout/recent-post";
-@import "./layout/main-index";

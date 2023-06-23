@@ -1,0 +1,207 @@
+.recent-post .container{
+    display: grid;
+    gap: 50px;
+}
+
+.recent-post-card{
+    display: grid;
+    gap: 30px;
+}
+
+.recent-post-card .card-banner{
+    border-radius: $radius-16;
+    transition: $transition-1;
+}
+
+.recent-post-card:is(:hover, :focus-within) .card-banner{
+    transform: translateY(-2px);
+}
+
+.recent-post-card .card-text{
+    color: $text-wild-blue-yonder;
+    font-size: $fontSize-6;
+    line-height: $lineHeight-1;
+}
+
+.recent-post-card .card-badge{
+    background-color: $bg-prussian-blue;
+    max-width: max-content;
+    color: $text-white;
+    font-size: $fontSize-8;
+    font-weight: $weight-bold;
+    padding: 4px 15px;
+    border-radius: $radius-pill;
+    transition: $transition-1;
+}
+
+.recent-post-card .card-badge:is(:hover, :focus-visible){
+    transform: translateY(-2px);
+    background-color: $bg-carolina-blue;
+}
+
+.recent-post-card .card-title{
+    margin-block: 15px 20px;
+}
+
+.recent-post-card .card-tag{
+    gap: 15px;
+    color: $text-slate-gray;
+}
+
+.recent-post-card .card-wrapper ion-icon{
+    font-size: 1.8rem;
+    --ionicon-stroke-width: 40px;
+}
+
+.pagination-btn{
+    background-color: $bg-prussian-blue;
+    color: $text-white;
+    font-weight: $weight-bold;
+    line-height: 1;
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: $radius-circle;
+    transition: 1;
+}
+
+.pagination-btn:is(:hover, :focus-visible){
+    background-color: $bg-carolina-blue;
+    transform: translateY(-2px);
+}
+
+.pagination{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-block-start: 60px;
+}
+
+.aside-card{
+    padding: 25px;
+    border-radius: $radius-16;
+}
+
+.aside-title{
+    margin-block-end: 40px;
+}
+
+.aside-title .span{
+    position: relative;
+}
+
+.aside-title .span::after{
+    content: "";
+    display: block;
+    width: 96px;
+    height: 3px;
+    background-color: $bg-carolina-blue;
+    margin-block-start: 10px;
+}
+
+.popular-card{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-inline-start: 20px;
+}
+
+.popular-card .card-banner{
+    width: 54px;
+    flex-shrink: 0;
+    border-radius: $radius-circle;
+}
+
+.popular-list > li:not(:last-child) .card-content{
+    border-block-end: 1px solid $border-prussian-blue;
+}
+
+.popular-card .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 10px;
+    font-size: $fontSize-6;
+    color: $text-slate-gray;
+    margin-block: 12px 20px;
+}
+
+.comment-list > li:not(:last-child) .comment-card{
+    padding-block-end: 22px;
+    border-block-end: 1px solid $border-prussian-blue;
+    margin-block-end: 22px;
+}
+
+.comment-card .card-text{
+    color: $text-wild-blue-yonder;
+    font-size: $fontSize-6;
+    line-height: $lineHeight-1;
+    margin-block-end: 20px;
+}
+
+.profile-card .profile-banner{
+    width: 30px;
+    flex-shrink: 0;
+    border-radius: $radius-circle;
+}
+
+.comment-card .profile-card{
+    color: $text-slate-gray;
+    font-size: $fontSize-6;
+}
+
+.comment-card .card-date{
+    font-size: $fontSize-7;
+}
+
+.insta-card .card-text{
+    color: $text-slate-gray;
+    font-weight: $weight-bold;
+    margin-block: 5px 30px;
+}
+
+.insta-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.insta-post{
+    border-radius: $radius-8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
