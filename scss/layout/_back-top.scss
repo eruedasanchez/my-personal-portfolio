@@ -1,0 +1,27 @@
+.back-top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: $bg-prussian-blue;
+    color: $white;
+    display: grid;
+    place-items: center;
+    border-radius: $radius-circle;
+    border: 3px solid $bg-carolina-blue;
+    transition: $transition-1;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 4;
+}
+
+.back-top-btn:is(:hover, :focus){
+    box-shadow: $shadow-2;
+}
+
+.back-top-btn.active{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-10px);
+}
