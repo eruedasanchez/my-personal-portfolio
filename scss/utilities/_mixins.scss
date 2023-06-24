@@ -3,3 +3,47 @@
     padding: $padding;
     box-sizing: $boxsizing;
 }
+
+@mixin dimensions($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin textStyle($fsize,$color,$fweight){
+    font-size: $fsize;
+    color: $color;
+    font-weight: $fweight;
+}
+
+@mixin flexbox($aitems,$gap){
+    display: flex;
+    align-items: $aitems;
+    gap: $gap;
+
+}
+
+// background-image: $gradient-2;
+//     background-size: 200%;
+//     background-position: left;
+
+
+@mixin topRight($top,$right){
+    top: $top;
+    right: $right;
+}
+
+@mixin topLeft($top,$left){
+    top: $top;
+    right: $left;
+}
+
+@mixin bottomLeft($bottom,$left){
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin grid($gtcol,$gap){
+    grid-template-columns: $gtcol;
+    gap: $gap;
+}
+

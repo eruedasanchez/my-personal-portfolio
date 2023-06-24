@@ -4,9 +4,7 @@
 
 .tag-btn{
     width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    @include flexbox(center,8px);
     padding: 18px;
     border-radius: $radius-16;
 }

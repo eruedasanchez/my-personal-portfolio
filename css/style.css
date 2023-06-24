@@ -99,16 +99,16 @@ body {
   -webkit-background-clip: text; }
 
 .btn {
-  background-image: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
-  background-size: 200%;
-  background-position: left;
-  color: white;
-  font-size: 1.4rem;
-  font-weight: 700;
   max-width: max-content;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 3px;
+  background-image: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+  background-size: 200%;
+  background-position: left;
   transition: 0.25s ease; }
 
 .btn:is(:hover, :focus-visible) {
@@ -146,22 +146,22 @@ body {
   font-size: 1.8rem;
   margin-block-end: 70px; }
 
-.grid-lis {
+.grid-list {
   display: grid;
   gap: 30px; }
 
 .card-wrapper {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
   align-items: center;
+  gap: 20px;
+  justify-content: space-between;
   font-size: 1.4rem;
   margin-block: 20px; }
 
 .card-wrapper :is(.card-tag, .wrapper) {
   display: flex;
-  gap: 3px;
-  align-items: center; }
+  align-items: center;
+  gap: 3px; }
 
 .header .btn {
   display: none; }
@@ -189,21 +189,21 @@ body {
 
 .header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 10px; }
+  gap: 10px;
+  justify-content: space-between; }
 
 .nav-open-btn, .nav-close-btn {
   color: #92a8c8;
   font-size: 3.5rem; }
 
 .navbar {
+  width: 100%;
+  height: 100vh;
   position: absolute;
   top: 0;
   right: -340px;
   max-width: 340px;
-  width: 100%;
-  height: 100vh;
   background-color: #0f1729;
   padding: 30px;
   z-index: 2;
@@ -241,8 +241,8 @@ body {
   margin-block-end: 15px; }
 
 .navbar .profile-card .card-title {
-  color: #bae1f2;
   font-size: 1.4rem;
+  color: #bae1f2;
   font-weight: 600; }
 
 .navbar .profile-card .card-subtitle {
@@ -745,7 +745,7 @@ body {
     pointer-events: none; }
   .hero-bg-1 {
     top: 80px;
-    left: 0; }
+    right: 0; }
   .hero-bg-2 {
     bottom: -200px;
     left: -20px; }

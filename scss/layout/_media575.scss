@@ -37,13 +37,11 @@
     }
 
     .hero-bg-1{
-        top: 80px;
-        left: 0;
+        @include topLeft(80px,0);
     }
 
     .hero-bg-2{
-        bottom: -200px;
-        left: -20px;
+        @include bottomLeft(-200px,-20px);
     }
 
     .shape-2{
@@ -71,27 +69,21 @@
     .feature-bg{
         display: block;
         position: absolute;
-        top: -100px;
-        right: 0;
+        @include topRight(-100px,0);
         pointer-events: none;
     }
 
     // Recent post
     .recent-post-card{
-        grid-template-columns: 0.5fr 1fr;
-        gap: 20px;
+        @include grid(0.5fr 1fr, 20px);
     }
 
     .pagination-btn{
-        width: 42px;
-        height: 42px;
+        @include dimensions(42px,42px);
     }
 
     // Aside
     .aside-title{
         $fontSize-2: 2rem;
-
     }
-
-
 }

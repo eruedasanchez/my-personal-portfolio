@@ -28,9 +28,7 @@
 }
 
 .headline-1{
-    font-size: $fontSize-1;
-    color: $text-alice-blue;
-    font-weight: $weight-extraBold;
+    @include textStyle($fontSize-1,$text-alice-blue,$weight-extraBold);
 }
 
 .headline-2{
@@ -54,16 +52,12 @@
 }
 
 .btn{
+    max-width: max-content;
+    @include textStyle($fontSize-6,$white,$weight-bold);
+    @include flexbox(center,3px);
     background-image: $gradient-2;
     background-size: 200%;
     background-position: left;
-    color: $white;
-    font-size: $fontSize-6;
-    font-weight: $weight-bold;
-    max-width: max-content;
-    display: flex;
-    align-items: center;
-    gap: 3px;
     transition: $transition-1;
 }
 
@@ -97,8 +91,7 @@
 }
 
 .img-cover{
-    width: 100%;
-    height: 100%;
+    @include dimensions(100%,100%);
     object-fit: cover;
 }
 
@@ -111,24 +104,20 @@
     margin-block-end: 70px;
 }
 
-.grid-lis{
+.grid-list{
     display: grid;
     gap: 30px;
 }
 
 .card-wrapper{
-    display: flex;
+    @include flexbox(center,20px);
     justify-content: space-between;
-    gap: 20px;
-    align-items: center;
     font-size: $fontSize-6;
     margin-block: 20px;
 }
 
 .card-wrapper :is(.card-tag, .wrapper){
-    display: flex;
-    gap: 3px;
-    align-items: center;
+    @include flexbox(center,3px);
 }
 
 
