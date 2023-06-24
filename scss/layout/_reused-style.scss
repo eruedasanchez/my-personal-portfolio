@@ -15,7 +15,11 @@
     color: $text-carolina-blue;
 }
 
-.profile-card, .profile-banner{
+.profile-card{
+    @include flexbox(center,10px);
+}
+
+.profile-card .profile-banner{
     border-radius: $radius-circle;
 
 }
@@ -79,6 +83,8 @@
     width: 100%;
 }
 
+// Topics
+
 .card{
     background-color: $bg-oxford-blue;
     border: 1px solid $border-prussian-blue;
@@ -94,6 +100,8 @@
     @include dimensions(100%,100%);
     object-fit: cover;
 }
+
+// Featured posts
 
 .section{
     padding-block: $section-padding;

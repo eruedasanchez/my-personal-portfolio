@@ -26,9 +26,7 @@
 .recent-post-card .card-badge{
     background-color: $bg-prussian-blue;
     max-width: max-content;
-    color: $text-white;
-    font-size: $fontSize-8;
-    font-weight: $weight-bold;
+    @include textStyle($fontSize-8,$text-white,$weight-bold);
     padding: 4px 15px;
     border-radius: $radius-pill;
     transition: $transition-1;
@@ -54,16 +52,15 @@
 }
 
 .pagination-btn{
+    @include dimensions(35px,35px);
     background-color: $bg-prussian-blue;
     color: $text-white;
     font-weight: $weight-bold;
     line-height: 1;
-    width: 35px;
-    height: 35px;
     display: grid;
     place-items: center;
     border-radius: $radius-circle;
-    transition: 1;
+    transition: $transition-1;
 }
 
 .pagination-btn:is(:hover, :focus-visible){
@@ -72,10 +69,8 @@
 }
 
 .pagination{
-    display: flex;
+    @include flexbox(center,5px);
     justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
     margin-block-start: 60px;
 }
 
@@ -93,18 +88,15 @@
 }
 
 .aside-title .span::after{
+    @include dimensions(96px,3px);
     content: "";
     display: block;
-    width: 96px;
-    height: 3px;
     background-color: $bg-carolina-blue;
     margin-block-start: 10px;
 }
 
 .popular-card{
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    @include flexbox(flex-start,10px);
     margin-inline-start: 20px;
 }
 

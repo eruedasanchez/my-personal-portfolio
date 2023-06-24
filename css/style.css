@@ -47,8 +47,11 @@ body {
   line-height: 1.5;
   overflow-y: overlay; }
 
+body.nav-active {
+  overflow: hidden; }
+
 ::-webkit-scrollbar {
-  width: 5px; }
+  width: 8.5px; }
 
 ::-webkit-scrollbar-track {
   background-color: transparent; }
@@ -70,7 +73,12 @@ body {
 .hover-2:is(:hover, :focus-visible) {
   color: #0ea6ec; }
 
-.profile-card, .profile-banner {
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 10px; }
+
+.profile-card .profile-banner {
   border-radius: 50%; }
 
 .headline {
@@ -167,10 +175,10 @@ body {
   display: none; }
 
 .header {
+  width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
   padding-block: 24px;
   background-color: #0f1729;
   z-index: 4; }
@@ -265,7 +273,7 @@ body {
   display: none; }
 
 .hero {
-  padding-block-start: calc(70px + 160px); }
+  padding-block-start: calc(50px + 160px); }
 
 .hero .container {
   display: grid;
@@ -281,9 +289,6 @@ body {
 .hero .hero-text {
   margin-block-end: 40px; }
 
-.hero .input-wrapper:hover {
-  box-shadow: 0px 3px 20px rgba(11, 208, 208, 0.2); }
-
 .hero .input-wrapper {
   position: relative;
   padding: 10px;
@@ -294,6 +299,9 @@ body {
   display: flex;
   justify-content: flex-end;
   transition: 0.25s ease; }
+
+.hero .input-wrapper:hover {
+  box-shadow: 0px 3px 20px rgba(11, 208, 208, 0.2); }
 
 .hero .input-field {
   padding-inline-end: 5px; }
@@ -391,7 +399,7 @@ body {
 .slider-title {
   color: #bae1f2;
   font-weight: 700;
-  margin-inline-end: 5px;
+  margin-block-end: 5px;
   transition: 0.25s ease; }
 
 .slider-card:is(:hover, :focus-visible) .slider-title {
@@ -425,6 +433,9 @@ body {
 .feature .profile-card:is(.card-title, .card-subtitle) {
   color: #66768f; }
 
+.feature .profile-card .card-title {
+  font-weight: 700; }
+
 .feature .profile-card .card-subtitle, .feature .profile-card .card-btn {
   font-size: 1.4rem; }
 
@@ -441,7 +452,7 @@ body {
   content: "";
   position: absolute;
   top: -13px;
-  left: -20px;
+  right: -20px;
   width: 48px;
   height: 48px;
   background-color: #0f1729;
@@ -498,8 +509,8 @@ body {
 .recent-post-card .card-badge {
   background-color: #223044;
   max-width: max-content;
-  color: white;
   font-size: 1.3rem;
+  color: white;
   font-weight: 700;
   padding: 4px 15px;
   border-radius: 200px;
@@ -521,16 +532,16 @@ body {
   --ionicon-stroke-width: 40px; }
 
 .pagination-btn {
+  width: 35px;
+  height: 35px;
   background-color: #223044;
   color: white;
   font-weight: 700;
   line-height: 1;
-  width: 35px;
-  height: 35px;
   display: grid;
   place-items: center;
   border-radius: 50%;
-  transition: 1; }
+  transition: 0.25s ease; }
 
 .pagination-btn:is(:hover, :focus-visible) {
   background-color: #0ea6ec;
@@ -538,9 +549,9 @@ body {
 
 .pagination {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   gap: 5px;
+  justify-content: flex-start;
   margin-block-start: 60px; }
 
 .aside-card {
@@ -554,10 +565,10 @@ body {
   position: relative; }
 
 .aside-title .span::after {
-  content: "";
-  display: block;
   width: 96px;
   height: 3px;
+  content: "";
+  display: block;
   background-color: #0ea6ec;
   margin-block-start: 10px; }
 
@@ -633,7 +644,7 @@ body {
 .footer-brand .footer-text {
   font-size: 1.4rem; }
 
-.footer-text:not(:address) {
+.footer-text:not(.address) {
   margin-block: 20px; }
 
 .footer-brand .footer-list-title {
@@ -667,7 +678,7 @@ body {
 .footer .input-wrapper ion-icon {
   position: absolute;
   top: 50%;
-  left: 0;
+  right: 0;
   transform: translateY(-50%);
   --ionicon-stoke-width: 40px; }
 

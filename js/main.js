@@ -16,7 +16,6 @@ const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const toggleNav = () => {
     navbar.classList.toggle("active");
     // document.body.classList.toggle("nav-active");
-
 } 
 
 addEventsOnElements(navTogglers, "click", toggleNav);
@@ -67,7 +66,7 @@ const sliderNext = function () {
 sliderNextBtn.addEventListener("click", sliderNext);
 
 
-// Prev slide
+// Previous slide
 
 const sliderPrev = function () {
     if(currentSlidePos <= 0){

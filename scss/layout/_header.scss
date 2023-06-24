@@ -3,10 +3,9 @@
 }
 
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+    position: fixed;
+    @include topLeft(0,0);
     padding-block: 24px;
     background-color: $bg-oxford-blue-2;
     z-index: 4;
@@ -37,8 +36,7 @@
 .navbar{
     @include dimensions(100%,100vh);
     position: absolute;
-    top: 0;
-    right: -340px;
+    @include topRight(0,-340px);
     max-width: 340px;
     background-color: $bg-oxford-blue-2;
     padding: 30px;

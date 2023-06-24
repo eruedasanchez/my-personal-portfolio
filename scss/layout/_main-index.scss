@@ -53,17 +53,16 @@ body{
     overflow-y: overlay;
 }
 
-// body.nav-active{
-//     overflow: hidden;
-// }
+body.nav-active{
+    overflow: hidden;
+}
 
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 8.5px;
 }
 
 ::-webkit-scrollbar-track{
     background-color: transparent;
-
 }
 
 ::-webkit-scrollbar-thumb{

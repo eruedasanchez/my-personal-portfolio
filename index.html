@@ -19,26 +19,26 @@
     </head>
     <body id="top">
         <!-- Inicio Header -->
-        <header class="header active" data-header>
+        <header class="header active" data-header>  <!-- use -->
             <div class="container">
                 <a href="./index.html" class="logo">
                     <img src="./assets/img/logo.svg" width="119" height="37" alt="Wren logo">
                 </a>
-                <nav class="navbar active" data-navbar>
+                <nav class="navbar active" data-navbar> <!-- use -->
                     <div class="navbar-top">
                         <a href="./index.html" class="logo">
                             <img src="./assets/img/logo.svg" width="119" height="37" alt="Wren logo">
                         </a>
-                        <button class="nav-close-btn" aria-label="close-menu" data-nav-toggler>
+                        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler> <!-- use -->
                             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
                         </button>
                     </div>
                     <ul class="navbar-list">
-                        <li><a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a></li>
-                        <li><a href="#topics" class="navbar-link hover-1" data-nav-toggler>Topics</a></li>
-                        <li><a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured post</a></li>
-                        <li><a href="#recent" class="navbar-link hover-1" data-nav-toggler>Recent post</a></li>
-                        <li><a href="#contact" class="navbar-link hover-1" data-nav-toggler>Contact</a></li>
+                        <li><a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a></li>              <!-- use -->
+                        <li><a href="#topics" class="navbar-link hover-1" data-nav-toggler>Topics</a></li>          <!-- use -->
+                        <li><a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured post</a></li> <!-- use -->
+                        <li><a href="#recent" class="navbar-link hover-1" data-nav-toggler>Recent post</a></li>     <!-- use -->
+                        <li><a href="#contact" class="navbar-link hover-1" data-nav-toggler>Contact</a></li>        <!-- use -->
                     </ul>
                     <div class="navbar-bottom">
                         <div class="profile-card">
@@ -57,15 +57,13 @@
                             <li><a href="#" class="navbar-bottom-link hover-1">Sign Out</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <p class="copyright-text">
-                            Copyright 2023 @ Wren - Personal Blog Template.
-                            Developed by e.ruedasanchez
-                        </p>
-                    </div>
+                    <p class="copyright-text">
+                        Copyright 2023 @ Wren - Personal Blog Template.
+                        Developed by e.ruedasanchez
+                    </p>
                 </nav>
                 <a href="#" class="btn btn-primary">Subscribe</a>
-                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>   <!-- use -->
                     <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
                 </button>
             </div>
@@ -82,12 +80,11 @@
                             <h1 class="headline headline-1 section-title">I'm <span class="span">Clark Kent</span></h1>
                             <p class="hero-text">I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I'm not adding motion just to spruce things up, but doing it in ways that.</p>
                             <div class="input-wrapper">
-                                <input type="email>" name="email_address" placeholder="Type your email address" required class="input-field">
+                                <input type="email" name="email_address" placeholder="Type your email address" required class="input-field">
                                 <button class="btn btn-primary">
                                     <span class="span">Subscribe</span>
                                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                                 </button>
-
                             </div>
                         </div>
                         <div class="hero-banner">
@@ -102,23 +99,23 @@
                 <!-- Fin hero section -->
 
                 <!-- Inicio topics section -->
-                <section class="topics">
+                <section class="topics" id="topics" aria-labelledby="topic-label">
                     <div class="container">
                         <div class="card topic-card">
                             <div class="card-content">
-                                <h2 class="headline headline-2 section-title card-title" id="topics">Hot topics</h2>
+                                <h2 class="headline headline-2 section-title card-title" id="topic-label">Hot topics</h2>
                                 <p class="card-text">Don't miss out on the latest news about Travel tips, Hotels review, Food guide...</p>
                                 <div class="btn-group">
-                                    <button class="btn-icon" aria-label ="previous" data-slider-prev>
+                                    <button class="btn-icon" aria-label ="previous" data-slider-prev> <!-- use -->
                                         <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
                                     </button>
-                                    <button class="btn-icon" aria-label ="next" data-slider-next>
+                                    <button class="btn-icon" aria-label ="next" data-slider-next>  <!-- use -->
                                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                     </button>
                                 </div>
                             </div>
-                            <div class="slider" data-slider>
-                                <ul class="slider-list" data-slider-container>
+                            <div class="slider" data-slider>   <!-- use -->
+                                <ul class="slider-list" data-slider-container> <!-- use -->
                                     <li class="slider-item">
                                         <a href="#" class="slider-card">
                                             <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
@@ -203,7 +200,7 @@
                                                 <span class="span">3 mins read</span>
                                             </div>
                                         </div>
-                                        <h3 class="headline-headline-3">
+                                        <h3 class="headline headline-3">
                                             <a href="#" class="card-title hover-2">Self-observation is the first step of inner unfolding</a>
                                         </h3>
                                         <div class="card-wrapper">
@@ -354,14 +351,13 @@
                         </a>
                     </div>
                     <img src="./assets/img/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
-
                 </section>
                 <!-- Fin Featured post -->
 
                 <!-- Inicio popular tags -->
                 <section class="tags" aria-labelledby="tag-label">
                     <div class="container">
-                        <h2 class="headline-headline-2 section-title" id="tag-label">
+                        <h2 class="headline headline-2 section-title" id="tag-label">
                             <span class="span">Popular Tags</span>
                         </h2>
                         <p class="section-text">Most searched keywords</p>
@@ -439,9 +435,7 @@
                                 </button>
                             </li>
                         </ul>
-
                     </div>
-
                 </section>
                 <!-- Fin popular tags -->
 
@@ -599,7 +593,7 @@
                                             </figure>
                                             <div class="card-content">
                                                 <h4 class="headline headline-4 card-title">
-                                                    <a href="#" class="link hover-2">Creating is a privilege but it’s also a gift</a>
+                                                    <a href="#" class="link hover-2">Creating is a privilege but it's also a gift</a>
                                                 </h4>
                                                 <div class="wrapper">
                                                     <p class="card-subtitle">15 mins read</p>
@@ -803,18 +797,18 @@
                         <div class="footer-list">
                             <p class="footer-list-title">Categories</p>
                             <ul>
-                                <li><a href="#" class="footer-list hover-2">Action</a></li>
-                                <li><a href="#" class="footer-list hover-2">Business</a></li>
-                                <li><a href="#" class="footer-list hover-2">Adventure</a></li>
-                                <li><a href="#" class="footer-list hover-2">Canada</a></li>
-                                <li><a href="#" class="footer-list hover-2">America</a></li>
-                                <li><a href="#" class="footer-list hover-2">Curiosity</a></li>
-                                <li><a href="#" class="footer-list hover-2">Animal</a></li>
-                                <li><a href="#" class="footer-list hover-2">Dental</a></li>
-                                <li><a href="#" class="footer-list hover-2">Biology</a></li>
-                                <li><a href="#" class="footer-list hover-2">Design</a></li>
-                                <li><a href="#" class="footer-list hover-2">Breakfast</a></li>
-                                <li><a href="#" class="footer-list hover-2">Dessert</a></li>
+                                <li><a href="#" class="footer-link hover-2">Action</a></li>
+                                <li><a href="#" class="footer-link hover-2">Business</a></li>
+                                <li><a href="#" class="footer-link hover-2">Adventure</a></li>
+                                <li><a href="#" class="footer-link hover-2">Canada</a></li>
+                                <li><a href="#" class="footer-link hover-2">America</a></li>
+                                <li><a href="#" class="footer-link hover-2">Curiosity</a></li>
+                                <li><a href="#" class="footer-link hover-2">Animal</a></li>
+                                <li><a href="#" class="footer-link hover-2">Dental</a></li>
+                                <li><a href="#" class="footer-link hover-2">Biology</a></li>
+                                <li><a href="#" class="footer-link hover-2">Design</a></li>
+                                <li><a href="#" class="footer-link hover-2">Breakfast</a></li>
+                                <li><a href="#" class="footer-link hover-2">Dessert</a></li>
                             </ul>
                         </div>
                         <div class="footer-list">
@@ -833,7 +827,6 @@
                                 <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                             </a>
                         </div>
-
                     </div>
                     <div class="footer-bottom">
                         <p class="copyright">&copy; Developed by <a href="#" class="copyright-link">e-ruedasanchez</a></p>

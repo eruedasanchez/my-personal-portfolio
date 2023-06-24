@@ -26,8 +26,13 @@
     margin-block-start: 24px;
 }
 
-.feature .profile-card:is(.card-title,.card-subtitle){
+.feature .profile-card:is(.card-title, .card-subtitle){
     color: $text-slate-gray;
+}
+
+.feature .profile-card .card-title{
+    font-weight: $weight-bold;
+
 }
 
 .feature .profile-card .card-subtitle, .feature .profile-card .card-btn{
@@ -48,10 +53,8 @@
 .feature .card-wrapper .card-btn::before{
     content: "";
     position: absolute;
-    top: -13px;
-    left: -20px;
-    width: 48px;
-    height: 48px;
+    @include topLeft(-13px,-20px);
+    @include dimensions(48px,48px);
     background-color: $bg-oxford-blue-2;
     border-radius: $radius-circle;
     z-index: -1;

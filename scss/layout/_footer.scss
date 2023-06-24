@@ -14,7 +14,7 @@
     font-size: $fontSize-6;
 }
 
-.footer-text:not(:address){
+.footer-text:not(.address){
     margin-block: 20px;
 }
 
@@ -55,8 +55,7 @@
 
 .footer .input-wrapper ion-icon{
     position: absolute;
-    top: 50%;
-    left: 0;
+    @include topLeft(50%,0);
     transform: translateY(-50%);
     --ionicon-stoke-width: 40px;
 }
@@ -85,9 +84,7 @@
 }
 
 .social-link{
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    @include flexbox(center,8px);
     transition: $transition-1;
 }
 
@@ -95,14 +92,4 @@
     color: $text-carolina-blue;
     transform: translateY(-2px);
 }
-
-
-
-
-
-
-
-
-
-
 
