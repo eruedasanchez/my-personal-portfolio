@@ -19,26 +19,26 @@
     </head>
     <body id="top">
         <!-- Inicio Header -->
-        <header class="header active" data-header>  <!-- use -->
+        <header id="header" class="header active">  
             <div class="container">
                 <a href="./index.html" class="logo">
                     <img src="./assets/img/logo.svg" width="119" height="37" alt="Wren logo">
                 </a>
-                <nav class="navbar active" data-navbar> <!-- use -->
+                <nav id="navbar" class="navbar active" > 
                     <div class="navbar-top">
                         <a href="./index.html" class="logo">
                             <img src="./assets/img/logo.svg" width="119" height="37" alt="Wren logo">
                         </a>
-                        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler> <!-- use -->
+                        <button class="nav-close-btn nav-toggler" aria-label="close menu"> 
                             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
                         </button>
                     </div>
                     <ul>  
-                        <li><a href="#home" class="hover-1" data-nav-toggler>Home</a></li>              <!-- use -->
-                        <li><a href="#topics" class="hover-1" data-nav-toggler>Topics</a></li>          <!-- use -->
-                        <li><a href="#featured" class="hover-1" data-nav-toggler>Featured post</a></li> <!-- use -->
-                        <li><a href="#recent" class="hover-1" data-nav-toggler>Recent post</a></li>     <!-- use -->
-                        <li><a href="#contact" class="hover-1" data-nav-toggler>Contact</a></li>        <!-- use -->
+                        <li><a href="#home" class="hover-1 nav-toggler">Home</a></li>              
+                        <li><a href="#topics" class="hover-1 nav-toggler">Topics</a></li>          
+                        <li><a href="#featured" class="hover-1 nav-toggler">Featured post</a></li> 
+                        <li><a href="#recent" class="hover-1 nav-toggler">Recent post</a></li>     
+                        <li><a href="#contact" class="hover-1 nav-toggler">Contact</a></li>        
                     </ul>
                     <div class="navbar-bottom">
                         <div class="profile-card">
@@ -63,7 +63,7 @@
                     </p>
                 </nav>
                 <a href="#" class="btn btn-primary">Subscribe</a>
-                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>   <!-- use -->
+                <button class="nav-open-btn nav-toggler" aria-label="open menu">   
                     <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
                 </button>
             </div>
@@ -838,15 +838,11 @@
                 </div>
             </div>
         </footer>
-
         <!-- Inicio Back to top -->
-        <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <a id="back-top" href="#top" class="back-top-btn" aria-label="back to top">
             <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
         </a>
         <!-- Fin Back to top -->
-        
-
-
         <script src="./js/main.js"></script>
         <!-- Ion icons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
