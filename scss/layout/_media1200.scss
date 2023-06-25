@@ -13,27 +13,24 @@
     .navbar{
         all: unset;
         display: block;
+        & ul{
+            border-block-end: none;
+            display: flex;
+            gap: 40px;
+            margin-inline: auto;
+            & li a{
+                color: $text-wild-blue-yonder;
+                font-weight: unset;
+                &:is(:hover, :focus-visible){
+                    color: $text-carolina-blue;
+                    transform: translateX(0);
+                }
+            }
+        }
     }
-
-    .navbar-list{
-        border-block-end: none;
-        display: flex;
-        gap: 40px;
-        margin-inline: auto;
-    }
-
+    
     .header .btn{
         margin-inline-start: 0;
-    }
-
-    .navbar-link{
-        color: $text-wild-blue-yonder;
-        font-weight: unset; 
-    }
-
-    .navbar-link:is(:hover, :focus-visible){
-        color: $text-carolina-blue;
-        transform: translateX(0);
     }
     
     // Hero

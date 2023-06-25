@@ -9,6 +9,10 @@
     padding-block: 24px;
     background-color: $bg-oxford-blue-2;
     z-index: 4;
+    & .container{
+        @include flexbox(center,10px);
+        justify-content: space-between;
+    }
 }
 
 .header.active{
@@ -21,11 +25,6 @@
 @keyframes slideIn{
     0% {transform: translateY(-100%);}
     100% {transform: translateY(0);}
-}
-
-.header .container{
-    @include flexbox(center,10px);
-    justify-content: space-between;
 }
 
 .nav-open-btn, .nav-close-btn{
@@ -44,6 +43,14 @@
     overflow-y: auto;
     visibility: hidden;
     transition: 0.25s $cubic-in;
+    & ul{
+        border-block-end: 1px solid $border-white-alpha-15;
+        & li a{
+            color: $text-alice-blue;
+            font-weight: $weight-medium;
+            padding-block: 10px;
+        }
+    }
 }
 
 .navbar.active{
@@ -61,16 +68,6 @@
     border-block-end: 1px solid $border-prussian-blue;
 }
 
-.navbar-list{
-    border-block-end: 1px solid $border-white-alpha-15;
-}
-
-.navbar-link{
-    color: $text-alice-blue;
-    font-weight: $weight-medium;
-    padding-block: 10px;
-}
-
 .navbar-bottom{
     padding-block: 30px 20px;
     margin-block: 20px 25px;
@@ -79,25 +76,22 @@
 
 .navbar .profile-card{
     margin-block-end: 15px;
+    & .card-title{
+        @include textStyle($fontSize-6,$text-columbia-blue,$weight-semiBold);
+    }
+    & .card-subtitle{
+        font-size: $fontSize-7;
+    }
 }
 
-.navbar .profile-card .card-title{
-    @include textStyle($fontSize-6,$text-columbia-blue,$weight-semiBold);
-}
-
-.navbar .profile-card .card-subtitle{
-    font-size: $fontSize-7;
-}
-
-.navbar .link-list{
+.link-list{
     columns: 2;
     -webkit-columns: 2;
-}
-
-.navbar-bottom-link{
-    color: $text-alice-blue;
-    font-size: $fontSize-6;
-    padding-block: 6px;
+    & li a{
+        color: $text-alice-blue;
+        font-size: $fontSize-6;
+        padding-block: 6px;
+    }
 }
 
 .copyright-text{

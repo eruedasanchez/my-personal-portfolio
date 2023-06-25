@@ -182,6 +182,11 @@ body.nav-active {
   padding-block: 24px;
   background-color: #0f1729;
   z-index: 4; }
+  .header .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between; }
 
 .header.active {
   padding-block: 8px;
@@ -194,12 +199,6 @@ body.nav-active {
     transform: translateY(-100%); }
   100% {
     transform: translateY(0); } }
-
-.header .container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: space-between; }
 
 .nav-open-btn, .nav-close-btn {
   color: #92a8c8;
@@ -218,6 +217,12 @@ body.nav-active {
   overflow-y: auto;
   visibility: hidden;
   transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28); }
+  .navbar ul {
+    border-block-end: 1px solid rgba(255, 255, 255, 0.15); }
+    .navbar ul li a {
+      color: #e6f0ff;
+      font-weight: 500;
+      padding-block: 10px; }
 
 .navbar.active {
   transform: translateX(-340px);
@@ -232,14 +237,6 @@ body.nav-active {
   margin-block-end: 15px;
   border-block-end: 1px solid #223044; }
 
-.navbar-list {
-  border-block-end: 1px solid rgba(255, 255, 255, 0.15); }
-
-.navbar-link {
-  color: #e6f0ff;
-  font-weight: 500;
-  padding-block: 10px; }
-
 .navbar-bottom {
   padding-block: 30px 20px;
   margin-block: 20px 25px;
@@ -247,23 +244,20 @@ body.nav-active {
 
 .navbar .profile-card {
   margin-block-end: 15px; }
+  .navbar .profile-card .card-title {
+    font-size: 1.4rem;
+    color: #bae1f2;
+    font-weight: 600; }
+  .navbar .profile-card .card-subtitle {
+    font-size: 1.2rem; }
 
-.navbar .profile-card .card-title {
-  font-size: 1.4rem;
-  color: #bae1f2;
-  font-weight: 600; }
-
-.navbar .profile-card .card-subtitle {
-  font-size: 1.2rem; }
-
-.navbar .link-list {
+.link-list {
   columns: 2;
   -webkit-columns: 2; }
-
-.navbar-bottom-link {
-  color: #e6f0ff;
-  font-size: 1.4rem;
-  padding-block: 6px; }
+  .link-list li a {
+    color: #e6f0ff;
+    font-size: 1.4rem;
+    padding-block: 6px; }
 
 .copyright-text {
   color: #e6f0ff;
@@ -838,19 +832,19 @@ body.nav-active {
   .navbar {
     all: unset;
     display: block; }
-  .navbar-list {
-    border-block-end: none;
-    display: flex;
-    gap: 40px;
-    margin-inline: auto; }
+    .navbar ul {
+      border-block-end: none;
+      display: flex;
+      gap: 40px;
+      margin-inline: auto; }
+      .navbar ul li a {
+        color: #92a8c8;
+        font-weight: unset; }
+        .navbar ul li a:is(:hover, :focus-visible) {
+          color: #0ea6ec;
+          transform: translateX(0); }
   .header .btn {
     margin-inline-start: 0; }
-  .navbar-link {
-    color: #92a8c8;
-    font-weight: unset; }
-  .navbar-link:is(:hover, :focus-visible) {
-    color: #0ea6ec;
-    transform: translateX(0); }
   .hero .container {
     max-width: 1050px; }
   .tags .grid-list {
