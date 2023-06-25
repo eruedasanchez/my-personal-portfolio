@@ -1,12 +1,16 @@
 @media(min-width: 768px){
-
-    // Typography
-    $fontSize-1: 6.4rem;
-    $fontSize-2: 4.5rem;
-
+    
     // Reused style
     .container{
         max-width: 720px;
+    }
+
+    .headline-1{
+        font-size: 6.4rem;
+    }
+
+    .headline-2{
+        font-size: 4.5rem;
     }
 
     // Recent post

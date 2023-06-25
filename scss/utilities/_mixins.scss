@@ -22,11 +22,6 @@
 
 }
 
-// background-image: $gradient-2;
-//     background-size: 200%;
-//     background-position: left;
-
-
 @mixin topRight($top,$right){
     top: $top;
     right: $right;
@@ -40,6 +35,11 @@
 @mixin bottomLeft($bottom,$left){
     bottom: $bottom;
     left: $left;
+}
+
+@mixin bottomRight($bottom,$right){
+    bottom: $bottom;
+    right: $right;
 }
 
 @mixin grid($gtcol,$gap){

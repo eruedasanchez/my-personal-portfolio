@@ -1,9 +1,7 @@
 .back-top-btn{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    @include bottomRight(20px,20px);
+    @include dimensions(50px,50px);
     background-color: $bg-prussian-blue;
     color: $white;
     display: grid;

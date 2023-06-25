@@ -6,7 +6,7 @@
 
     // Hero
     .hero{
-        padding-block-start: calc($section-padding + 80px);
+        padding-block-start: calc(70px + 80px);
     }
 
     .hero .container{
@@ -17,9 +17,8 @@
     // Topics
     .topic-card{
         display: grid;
-        grid-template-columns: 0.3fr 1fr;
+        @include grid(0.3fr 1fr, 20px);
         align-items: center;
-        gap: 20px;
     }
 
     // Feature
