@@ -18,7 +18,7 @@
             display: flex;
             gap: 40px;
             margin-inline: auto;
-            & li a{
+            li a{
                 color: $text-wild-blue-yonder;
                 font-weight: unset;
                 &:is(:hover, :focus-visible){

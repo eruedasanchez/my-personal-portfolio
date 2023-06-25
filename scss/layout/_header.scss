@@ -9,10 +9,6 @@
     padding-block: 24px;
     background-color: $bg-oxford-blue-2;
     z-index: 4;
-    & .container{
-        @include flexbox(center,10px);
-        justify-content: space-between;
-    }
 }
 
 .header.active{
@@ -25,6 +21,11 @@
 @keyframes slideIn{
     0% {transform: translateY(-100%);}
     100% {transform: translateY(0);}
+}
+
+.header .container{
+    @include flexbox(center,10px);
+    justify-content: space-between;
 }
 
 .nav-open-btn, .nav-close-btn{
@@ -45,7 +46,7 @@
     transition: 0.25s $cubic-in;
     & ul{
         border-block-end: 1px solid $border-white-alpha-15;
-        & li a{
+        li a{
             color: $text-alice-blue;
             font-weight: $weight-medium;
             padding-block: 10px;
@@ -84,14 +85,15 @@
     }
 }
 
-.link-list{
+.navbar .link-list{
     columns: 2;
     -webkit-columns: 2;
-    & li a{
-        color: $text-alice-blue;
-        font-size: $fontSize-6;
-        padding-block: 6px;
-    }
+}
+
+.navbar-bottom-link{
+    color: $text-alice-blue;
+    font-size: $fontSize-6;
+    padding-block: 6px;
 }
 
 .copyright-text{

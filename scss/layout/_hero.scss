@@ -9,15 +9,14 @@
 .hero .container{
     display: grid;
     gap: 50px;
+    h1{
+        margin-block: 20px;
+    }
 }
 
 .hero-subtitle{
     font-size: $fontSize-6;
     font-weight: $weight-bold;
-}
-
-.hero .section-title{
-    margin-block: 20px;
 }
 
 .hero .hero-text{

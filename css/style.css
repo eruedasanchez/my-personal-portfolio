@@ -182,11 +182,6 @@ body.nav-active {
   padding-block: 24px;
   background-color: #0f1729;
   z-index: 4; }
-  .header .container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: space-between; }
 
 .header.active {
   padding-block: 8px;
@@ -199,6 +194,12 @@ body.nav-active {
     transform: translateY(-100%); }
   100% {
     transform: translateY(0); } }
+
+.header .container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between; }
 
 .nav-open-btn, .nav-close-btn {
   color: #92a8c8;
@@ -251,13 +252,14 @@ body.nav-active {
   .navbar .profile-card .card-subtitle {
     font-size: 1.2rem; }
 
-.link-list {
+.navbar .link-list {
   columns: 2;
   -webkit-columns: 2; }
-  .link-list li a {
-    color: #e6f0ff;
-    font-size: 1.4rem;
-    padding-block: 6px; }
+
+.navbar-bottom-link {
+  color: #e6f0ff;
+  font-size: 1.4rem;
+  padding-block: 6px; }
 
 .copyright-text {
   color: #e6f0ff;
@@ -272,13 +274,12 @@ body.nav-active {
 .hero .container {
   display: grid;
   gap: 50px; }
+  .hero .container h1 {
+    margin-block: 20px; }
 
 .hero-subtitle {
   font-size: 1.4rem;
   font-weight: 700; }
-
-.hero .section-title {
-  margin-block: 20px; }
 
 .hero .hero-text {
   margin-block-end: 40px; }
@@ -746,7 +747,7 @@ body.nav-active {
   .header .btn {
     display: block;
     margin-inline-start: auto; }
-  .header .active {
+  .header.active {
     padding-block: 20px; }
   .hero {
     position: relative; }
