@@ -12,18 +12,15 @@
     padding: 20px;
     border-radius: $radius-16;
     transition: $transition-1;
-}
-
-.feature-card:is(:hover,:focus-within){
-    transform: translateY(-5px);
-}
-
-.feature-card .card-banner{
-    border-radius: $radius-16;
-}
-
-.feature-card .card-wrapper{
-    margin-block-start: 24px;
+    &:is(:hover,:focus-within){
+        transform: translateY(-5px);
+    }
+    & .card-banner{
+        border-radius: $radius-16;
+    }
+    & .card-wrapper{
+        margin-block-start: 24px;
+    }
 }
 
 .feature .profile-card:is(.card-title, .card-subtitle){
