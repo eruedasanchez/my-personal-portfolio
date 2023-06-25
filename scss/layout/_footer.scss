@@ -10,17 +10,17 @@
     gap: 20px;
 }
 
-.footer-brand .footer-text{
-    font-size: $fontSize-6;
-}
-
-.footer-text:not(.address){
-    margin-block: 20px;
-}
-
-.footer-brand .footer-list-title{
-    margin-block-end: 2px;
-}
+.footer-brand{
+    & .footer-text{
+        font-size: $fontSize-6;
+        &:not(.address){
+            margin-block: 20px;
+        }
+    }
+    & .footer-list-title{
+        margin-block-end: 2px;
+    }
+} 
 
 .footer-list-title{
     color: $text-columbia-blue;
@@ -30,66 +30,57 @@
 
 .footer-list ul{
     columns: 2;
-}
-
-.footer-link{
-    margin-block-end: 12px;
+    li a{
+        margin-block-end: 12px;
+    }
 }
 
 .footer .input-wrapper{
     position: relative;
     margin-block-end: 24px;
-}
-
-.footer .input-field{
-    padding: 12px;
-    padding-inline-start: 20px;
-    border-block-end: 1px solid $text-wild-blue-yonder;
-    font-size: $fontSize-6;
-}
-
-.footer .input-field::-webkit-input-placeholder{
-    color: inherit;
-    opacity: 0.5;
-}
-
-.footer .input-wrapper ion-icon{
-    position: absolute;
-    @include topLeft(50%,0);
-    transform: translateY(-50%);
-    --ionicon-stoke-width: 40px;
+    input{
+        padding: 12px;
+        padding-inline-start: 20px;
+        border-block-end: 1px solid $text-wild-blue-yonder;
+        font-size: $fontSize-6;
+        &::-webkit-input-placeholder{
+            color: inherit;
+            opacity: 0.5;
+        }
+    }
+    ion-icon{
+        position: absolute;
+        @include topLeft(50%,0);
+        transform: translateY(-50%);
+        --ionicon-stoke-width: 40px;
+    }
 }
 
 .footer-bottom{
     border-block-start: 1px solid $border-prussian-blue;
     padding-block: 50px;
-}
-
-.copyright{
-    text-align: center;
-    margin-block-end: 15px;
-}
-
-.copyright-link{
-    display: inline-block;
-    color: $bg-carolina-blue;
-    font-style: italic;
-}
-
-.social-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;    
-}
-
-.social-link{
-    @include flexbox(center,8px);
-    transition: $transition-1;
-}
-
-.social-link:is(:hover, :focus-visible){
-    color: $text-carolina-blue;
-    transform: translateY(-2px);
+    p{
+        text-align: center;
+        margin-block-end: 15px;
+        a{
+            display: inline-block;
+            color: $bg-carolina-blue;
+            font-style: italic;
+        }
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        li a{
+            @include flexbox(center,8px);
+            transition: $transition-1;
+            &:is(:hover, :focus-visible){
+                color: $text-carolina-blue;
+                transform: translateY(-2px);
+            }
+        }   
+    }
 }
 

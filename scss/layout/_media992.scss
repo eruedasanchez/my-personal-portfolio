@@ -53,9 +53,8 @@
     .footer-bottom{
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-    .copyright{
-        margin-block-end: 0;
+        p{
+            margin-block-end: 0;
+        }
     }
 }
