@@ -450,18 +450,16 @@ body.nav-active {
   gap: 8px;
   padding: 18px;
   border-radius: 16px; }
-
-.tag-btn:is(:hover, :focus-visible) {
-  box-shadow: 0px 3px 20px rgba(11, 208, 208, 0.2);
-  background-image: linear-gradient(#131b30, #131b30, linear-gradient(90deg, #0ea5ea, #0bd1d1 51%));
-  background-clip: padding-box, border-box;
-  border-color: transparent;
-  transform: translateY(-2px);
-  transition: 0.25s ease; }
-
-.tag-btn img {
-  width: 100%;
-  max-width: 32px; }
+  .tag-btn:is(:hover, :focus-visible) {
+    box-shadow: 0px 3px 20px rgba(11, 208, 208, 0.2);
+    background-image: linear-gradient(#131b30, #131b30, linear-gradient(90deg, #0ea5ea, #0bd1d1 51%));
+    background-clip: padding-box, border-box;
+    border-color: transparent;
+    transform: translateY(-2px);
+    transition: 0.25s ease; }
+  .tag-btn img {
+    width: 100%;
+    max-width: 32px; }
 
 .recent-post .container {
   display: grid;

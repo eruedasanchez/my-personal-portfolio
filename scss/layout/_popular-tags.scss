@@ -7,18 +7,17 @@
     @include flexbox(center,8px);
     padding: 18px;
     border-radius: $radius-16;
+    &:is(:hover, :focus-visible){
+        box-shadow: $shadow-2;
+        background-image: linear-gradient($bg-oxford-blue,$bg-oxford-blue,$gradient-1);
+        background-clip: padding-box, border-box;
+        border-color: transparent;
+        transform: translateY(-2px);
+        transition: $transition-1;
+    }
+    img{
+        width: 100%;
+        max-width: 32px;
+    }
 }
 
-.tag-btn:is(:hover, :focus-visible){
-    box-shadow: $shadow-2;
-    background-image: linear-gradient($bg-oxford-blue,$bg-oxford-blue,$gradient-1);
-    background-clip: padding-box, border-box;
-    border-color: transparent;
-    transform: translateY(-2px);
-    transition: $transition-1;
-}
-
-.tag-btn img{
-    width: 100%;
-    max-width: 32px;
-}
