@@ -1,70 +1,64 @@
 .topic-card{
     padding: 24px;
     border-radius: $radius-8;
-}
-
-.topic-card .card-content{
-    margin-block-end: 15px;
-}
-
-.topic-card .card-text{
-    color: $text-wild-blue-yonder;
-    font-size: $fontSize-6;
-    margin-block: 15px 20px;
+    & .card-content{
+        margin-block-end: 15px;
+    }
+    & .card-text{
+        color: $text-wild-blue-yonder;
+        font-size: $fontSize-6;
+        margin-block: 15px 20px;
+    }
 }
 
 .btn-group{
     @include flexbox(center,10px);
-}
-
-.btn-icon{
-    @include dimensions(32px,32px);
-    display: grid;
-    place-items: center;
-    background: $bg-prussian-blue;
-    border-radius: $radius-circle;
-    color: $white;
-}
-
-.btn-icon:is(:hover, :focus-visible){
-    background: $gradient-1;
+    button{
+        @include dimensions(32px,32px);
+        display: grid;
+        place-items: center;
+        background: $bg-prussian-blue;
+        border-radius: $radius-circle;
+        color: $white;
+        &:is(:hover, :focus-visible){
+            background: $gradient-1;
+        }
+    }
 }
 
 .slider{
     --slider-items: 1;
     overflow: hidden;
-}
-
-.slider-list{
-    position: relative;
-    @include flexbox(center,20px);
-    transition: transform $transition-2;
-}
-
-.slider-item{
-    min-width: 100%;
-}
-
-.slider-card{
-    position: relative;
-}
-
-.slider-card::before{
-    content: "";
-    position: absolute;
-    @include bottomLeft(0,0);
-    @include dimensions(100%,50%);
-    background-image: $gradient-3;
-    border-radius: $radius-8;
+    ul{
+        position: relative;
+        @include flexbox(center,20px);
+        transition: transform $transition-2;
+        li{
+            min-width: 100%;
+            a{
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include bottomLeft(0,0);
+                    @include dimensions(100%,50%);
+                    background-image: $gradient-3;
+                    border-radius: $radius-8;
+                }
+                div{
+                    position: absolute;
+                    @include bottomLeft(15px,15px);
+                }
+                &:is(:hover, :focus-visible) .slider-title{
+                    color: $text-carolina-blue;
+                }
+            }
+        }
+    }
 }
 
 .slider-list .slider-banner{
     border-radius: $radius-8;
-}
-
-.slider-content{
-    position: absolute;
-    @include bottomLeft(15px,15px);
 }
 
 .slider-title{
@@ -72,10 +66,6 @@
     font-weight: $weight-bold;
     margin-block-end: 5px;
     transition: $transition-1;
-}
-
-.slider-card:is(:hover, :focus-visible) .slider-title{
-    color: $text-carolina-blue;
 }
 
 .slider-subtitle{

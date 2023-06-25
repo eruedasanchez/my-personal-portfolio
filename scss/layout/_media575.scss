@@ -59,10 +59,10 @@
         @include bottomLeft(-200px,-20px);
     }
 
-    .shape-2{
+    .hero-banner .shape-2{
         left: 60px;
     }
-
+    
     // Topics
     .topics .section-title{
         font-size: 2rem;
@@ -70,12 +70,11 @@
 
     .slider{
         --slider-items: 3;
+        ul li{
+            min-width: calc(33.33% - 13.33px);
+        }
     }
-
-    .slider-item{
-        min-width: calc(33.33% - 13.33px);
-    }
-
+    
     // Feature
     .feature{
         position: relative;
